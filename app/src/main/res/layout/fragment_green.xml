@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    android:orientation="vertical"
+    app:errorEnabled="true"
+    android:padding="@dimen/dp12">
+
+    <EditText
+        android:id="@+id/cardNumTxt"
+        android:layout_width="@dimen/dp271"
+        android:layout_height="@dimen/dp42"
+        android:layout_marginTop="@dimen/dp4"
+        android:hint="@string/card_number"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="@dimen/dp79"
+        android:layout_height="@dimen/dp36"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cardNumTxt"
+        app:layout_constraintTop_toTopOf="@+id/cardNumTxt"
+        app:srcCompat="@drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp36"
+        android:layout_marginRight="@dimen/dp36"
+        android:text="@string/scan"
+        android:textColor="@color/colored"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_card_number"
+        android:textColor="@color/colored"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cardNumTxt"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumTxt" />
+
+    <EditText
+        android:id="@+id/exprDate"
+        android:layout_width="@dimen/dp378"
+        android:layout_height="@dimen/dp41"
+        android:ems="10"
+        android:hint="@string/mm_yy"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardNumTxt"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/cvvTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp27"
+        android:ems="10"
+        android:hint="CVV"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exprDate" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="@dimen/dp46"
+        android:layout_height="@dimen/dp19"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exprDate"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/dp90"
+        android:layout_height="@dimen/dp24"
+        android:text="Card type"
+        android:textColor="@color/colored"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="@dimen/heightzero"
+        android:layout_height="@dimen/dp46"
+        android:background="@color/chkbtncolor"
+        android:text="@string/add_bank"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvvTxt"
+        app:layout_constraintVertical_bias="0.162" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

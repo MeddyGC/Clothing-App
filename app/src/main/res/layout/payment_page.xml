@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgrcolor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Successful !"
+        android:textColor="#69BE1D"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/paymentcofirmTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you ! Your Payment has been received."
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="86dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please rate your experience"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="0%"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chkbtncolor"
+        android:text="Back to Shop" />
+
+    <Button
+        android:id="@+id/viewInvBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chkbtncolor"
+        android:text="VIEW INVENTORY" />
+</LinearLayout>

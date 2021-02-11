@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/gridviewdata"
+        android:layout_width="@dimen/dp378"
+        android:layout_height="@dimen/dp400"
+        android:background="#fff"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Shirt details"
+            android:textColor="@color/theblack"
+            android:textSize="@dimen/dp30"
+
+            />
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="@dimen/dp261"
+            android:layout_height="@dimen/dp279"
+            android:layout_below="@id/products"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp19"
+            android:background="@android:drawable/picture_frame"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.345" />
+
+        <Button
+            android:id="@+id/cartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to cart"
+            app:layout_constraintEnd_toEndOf="@+id/griddata"
+            app:layout_constraintStart_toStartOf="@+id/griddata"
+            app:layout_constraintTop_toBottomOf="@+id/griddata" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/container"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+
+        android:padding="@dimen/dp20">
+
+        <EditText
+
+            android:id="@+id/messageEdit"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginRight="-6dp"
+
+            android:layout_marginBottom="@dimen/dp70"
+
+            android:layout_toLeftOf="@+id/chatSendButton"
+            android:autoText="true"
+            android:hint="@string/type_message" />
+
+        <ImageButton
+
+            android:id="@+id/chatSendButton"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginRight="@dimen/dp30"
+
+            android:layout_marginBottom="@dimen/dp94"
+            android:background="@color/colorfff"
+
+            android:src="@mipmap/ic_sendmessage_round"
+            android:text="@string/send_msg"
+            android:textColor="@color/background_material_light" />
+
+        <ListView
+
+            android:id="@+id/messagesContainer"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/messageEdit"
+
+            android:layout_below="@+id/meLbl"
+
+            android:layout_alignParentLeft="false"
+
+            android:layout_alignParentTop="false"
+
+            android:layout_marginTop="@dimen/dp12"
+
+            android:layout_marginBottom="@dimen/dp63"
+
+            android:divider="@null"
+
+            android:listSelector="@android:color/transparent"
+
+            android:transcriptMode="alwaysScroll" />
+
+        <TextView
+
+            android:id="@+id/meLbl"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="left|center_vertical"
+
+            android:singleLine="false"
+
+            android:text="MySelf"
+
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+
+            android:id="@+id/friendLabel"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+
+            android:text="@string/friend"
+
+            android:textSize="20dp" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            app:itemBackground="@color/colorPrimary"
+            app:itemTextColor="@drawable/selector"
+            app:itemIconTint="@drawable/selector"
+            app:menu="@menu/menu_navigation"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

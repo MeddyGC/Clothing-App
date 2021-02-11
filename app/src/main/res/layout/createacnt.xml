@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1818"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:text="@string/create_account"
+        android:textColor="@color/txtColor"
+        android:textColorHint="@color/txtColor"
+        android:textSize="@dimen/txtsizeacnt"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:background="@drawable/textview_border"
+        android:textColor="@color/txtColor"
+        android:layout_height="@dimen/hgttxt40"
+        android:layout_marginTop="@dimen/mrg20"
+        android:hint="@string/full_name"
+        android:textColorHint="@color/txtColor"
+        android:textSize="@dimen/txtsizeacnt" />
+
+    <EditText
+        android:id="@+id/useremail"
+        android:background="@drawable/textview_border"
+        android:textColor="@color/txtColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hg40"
+        android:layout_marginTop="@dimen/mrg20"
+        android:hint="@string/emailhnt"
+        android:textColorHint="@color/txtColor"
+        android:textSize="@dimen/txtsizeacnt" />
+
+    <EditText
+        android:id="@+id/password"
+        android:background="@drawable/textview_border"
+        android:textColor="@color/txtColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hg40"
+        android:ems="10"
+        android:hint="@string/hintpw"
+        android:textColorHint="@color/txtColor"
+        android:inputType="textPassword"
+        android:textSize="@dimen/txtsizeacnt"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/dp174s"
+        android:layout_height="wrap_content"
+        android:text="@string/select_date_of_birth"
+        android:textSize="@dimen/btnsize"
+        android:background="@color/BTNCOLOR"/>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:textColor="@color/txtColor"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview_border"
+        android:hint="@string/hint"
+        android:textColorHint="@color/txtColor"
+        android:textSize="@dimen/txtsizeacnt" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="@dimen/btnwd"
+        android:layout_height="wrap_content"
+        android:text="@string/next_page"
+        android:background="@color/BTNCOLOR"/>
+
+    <RadioGroup
+        android:id="@+id/sizes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/Ssize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txtColor"
+            android:text="@string/s" />
+
+        <RadioButton
+            android:id="@+id/Msize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txtColor"
+            android:checked="true"
+            android:text="@string/m" />
+
+        <RadioButton
+            android:id="@+id/Lsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txtColor"
+            android:text="@string/l" />
+
+        <RadioButton
+            android:id="@+id/XLsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txtColor"
+            android:text="@string/xl" />
+
+        <RadioButton
+            android:id="@+id/XXLsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txtColor"
+            android:text="@string/xxl" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="@dimen/dp122"
+            android:layout_height="wrap_content"
+            android:background="@color/BTNCOLOR"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/retrieveBtn"
+            android:layout_width="@dimen/dp122"
+            android:layout_height="wrap_content"
+            android:background="@color/BTNCOLOR"
+            android:text="AUTOFILL"
+            />
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="@dimen/dp122"
+            android:layout_height="wrap_content"
+            android:background="@color/BTNCOLOR"
+            android:text="SAVE DETALS"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>
